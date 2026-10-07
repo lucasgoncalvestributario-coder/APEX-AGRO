@@ -82,7 +82,7 @@ export const Navbar: React.FC = () => {
               onClick={() => openWhatsApp('geral')}
               className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#25d366] hover:bg-[#20ba5a] text-black font-extrabold text-xs lg:text-sm tracking-wider uppercase transition-all transform hover:scale-105 shadow-xl shadow-[#25d366]/20 cursor-pointer"
             >
-              <WhatsAppIcon className="w-5 h-5 text-black" />
+              <WhatsAppIcon className="w-5 h-5 text-black shrink-0" />
               <span>FALAR COM A APEX AGRO</span>
             </button>
           </div>
@@ -141,29 +141,6 @@ export const Navbar: React.FC = () => {
               CONTATO
             </a>
           </nav>
-
-          <div className="pt-6 space-y-3">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                openWhatsApp('vender');
-              }}
-              className="w-full flex items-center justify-center gap-2 py-3.5 rounded-full bg-white text-black font-extrabold text-sm tracking-wider uppercase shadow-xl"
-            >
-              <span>QUERO VENDER</span>
-            </button>
-
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                openWhatsApp('geral');
-              }}
-              className="w-full flex items-center justify-center gap-3 py-3.5 rounded-full bg-[#25d366] text-black font-extrabold text-sm tracking-wider uppercase shadow-xl"
-            >
-              <WhatsAppIcon className="w-5 h-5 text-black" />
-              <span>FALAR COM A APEX AGRO</span>
-            </button>
-          </div>
         </div>
       )}
 

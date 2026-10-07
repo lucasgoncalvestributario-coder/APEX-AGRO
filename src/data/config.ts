@@ -1,8 +1,8 @@
 export const WHATSAPP_NUMBER = '5547996197584';
 export const WHATSAPP_DISPLAY = '(47) 99619-7584';
 export const PHONE_CONTACT = '(47) 99619-7584';
-export const INSTAGRAM_HANDLE = '@apex.agro';
-export const INSTAGRAM_URL = 'https://instagram.com/apex.agro';
+export const INSTAGRAM_HANDLE = '@grupoapex.agro';
+export const INSTAGRAM_URL = 'https://instagram.com/grupoapex.agro';
 export const EMAIL_CONTACT = 'contato@apexagro.com.br';
 export const ADDRESS_CONTACT = 'Santa Catarina, Brasil';
 

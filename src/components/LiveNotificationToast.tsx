@@ -12,32 +12,14 @@ const NOTIFICATIONS: NotificationItem[] = [
   {
     id: 1,
     badge: 'OPORTUNIDADE',
-    message: 'Um comprador está procurando uma máquina na sua região.',
-    timeAgo: 'Plataforma Ativa',
+    message: 'Nova máquina acabou de entrar no estoque',
+    timeAgo: 'Agora',
   },
   {
     id: 2,
-    badge: 'NOVA OPORTUNIDADE',
-    message: 'Uma nova máquina foi cadastrada para intermediação na APEX AGRO.',
-    timeAgo: 'Rede Ativa',
-  },
-  {
-    id: 3,
-    badge: 'INTERESSE',
-    message: 'Um comprador demonstrou interesse em uma máquina.',
-    timeAgo: 'Intermediação',
-  },
-  {
-    id: 4,
-    badge: 'CONSIGNAÇÃO',
-    message: 'Proprietário anunciou uma nova máquina.',
-    timeAgo: 'Rede APEX',
-  },
-  {
-    id: 5,
-    badge: 'PROCURA ATIVA',
-    message: 'Novo interessado procurando máquinas agrícolas.',
-    timeAgo: 'Demanda Regional',
+    badge: 'OPORTUNIDADE',
+    message: 'Comprador procurando máquina na sua região',
+    timeAgo: 'Agora',
   },
 ];
 

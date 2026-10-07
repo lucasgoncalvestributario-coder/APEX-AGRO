@@ -6,7 +6,8 @@ import {
   ADDRESS_CONTACT,
   getWhatsAppUrl,
 } from '../data/config';
-import { MessageSquare, Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const ContactSection: React.FC = () => {
   const openWhatsApp = () => {
@@ -29,18 +30,15 @@ export const ContactSection: React.FC = () => {
           {/* WhatsApp */}
           <div
             onClick={openWhatsApp}
-            className="p-6 rounded-2xl bg-[#111215] border border-zinc-800/80 hover:border-white transition-all cursor-pointer group"
+            className="p-6 rounded-2xl bg-[#111215] border border-zinc-800/80 hover:border-[#25d366]/60 transition-all cursor-pointer group"
           >
-            <div className="w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <MessageSquare className="w-5 h-5" />
+            <div className="w-10 h-10 flex items-center mb-4 group-hover:scale-110 transition-transform">
+              <WhatsAppIcon className="w-7 h-7" />
             </div>
             <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 block mb-1">
               WHATSAPP
             </span>
             <div className="text-lg font-black text-white">{WHATSAPP_DISPLAY}</div>
-            <div className="text-xs font-bold uppercase tracking-wider text-zinc-300 mt-1">
-              GONÇALVES
-            </div>
             <span className="text-xs text-[#25d366] font-semibold mt-2 inline-block">
               Atendimento Online →
             </span>

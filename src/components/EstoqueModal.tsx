@@ -55,9 +55,8 @@ export const EstoqueModal: React.FC<EstoqueModalProps> = ({ isOpen, onClose }) =
           <X className="w-5 h-5" />
         </button>
 
-        {/* Detalhe sutil da marca */}
-        <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-[#c59b27]/10 border border-[#c59b27]/30 flex items-center justify-center">
-          <WhatsAppIcon className="w-6 h-6 text-[#25d366]" />
+        <div className="mb-4 flex items-center justify-center">
+          <WhatsAppIcon className="w-8 h-8" />
         </div>
 
         {/* Título */}

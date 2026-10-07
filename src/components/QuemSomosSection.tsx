@@ -9,9 +9,6 @@ export const QuemSomosSection: React.FC = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Canto superior esquerdo: QUEM SOMOS */}
         <div className="text-left mb-8 sm:mb-12 md:mb-16">
-          <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#c59b27] block mb-2">
-            INSTITUCIONAL
-          </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight uppercase">
             QUEM SOMOS
           </h2>
