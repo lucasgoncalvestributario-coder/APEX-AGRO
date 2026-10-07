@@ -1,0 +1,6 @@
+{
+  "name": "APEX AGRO | Intermediação de Máquinas Agrícolas",
+  "description": "Intermediação e consignação de máquinas agrícolas de alto valor para quem quer vender com estratégia e comprar com segurança.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
