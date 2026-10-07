@@ -26,7 +26,8 @@ export const Hero: React.FC = () => {
             src="/hero-pulverizador.png"
             alt="Pulverizador Agrícola ao Pôr do Sol - APEX AGRO"
             fetchPriority="high"
-            decoding="async"
+            loading="eager"
+            decoding="sync"
             className="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.05]"
           />
         </picture>

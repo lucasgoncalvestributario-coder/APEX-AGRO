@@ -15,6 +15,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Precarregamento imediato de todas as fotos em alta resolução para exibição instantânea -->
+    <link rel="preload" as="image" href="/logo.png" fetchpriority="high" type="image/png">
+    <link rel="preload" as="image" href="/hero-pulverizador-4k.webp" type="image/webp" media="(min-width: 1440px)" fetchpriority="high">
+    <link rel="preload" as="image" href="/hero-pulverizador-2k.webp" type="image/webp" media="(min-width: 768px) and (max-width: 1439px)" fetchpriority="high">
+    <link rel="preload" as="image" href="/hero-pulverizador.webp" type="image/webp" media="(max-width: 767px)" fetchpriority="high">
+
+    <script>
+      (function() {
+        // Pré-carrega imediatamente todas as imagens em cache na mais alta qualidade
+        const criticalImages = [
+          '/logo.png',
+          '/hero-pulverizador-4k.webp',
+          '/hero-pulverizador-2k.webp',
+          '/hero-pulverizador.webp',
+          '/hero-pulverizador.png'
+        ];
+        criticalImages.forEach(function(src) {
+          const img = new Image();
+          img.fetchPriority = 'high';
+          img.src = src;
+        });
+      })();
+    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",

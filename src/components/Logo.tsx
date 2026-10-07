@@ -20,6 +20,9 @@ export const Logo: React.FC<LogoProps> = ({ className = '', size = 'lg' }) => {
       <img
         src="/logo.png"
         alt="APEX AGRO"
+        loading="eager"
+        fetchPriority="high"
+        decoding="sync"
         onError={(e) => {
           // Fallback if needed
           e.currentTarget.src = '/logo.jpg';
