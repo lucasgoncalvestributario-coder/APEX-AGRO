@@ -3,10 +3,12 @@ import { Logo } from './Logo';
 import { getWhatsAppUrl } from '../data/config';
 import { WhatsAppIcon } from './WhatsAppIcon';
 import { Menu, X } from 'lucide-react';
+import { EstoqueModal } from './EstoqueModal';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isEstoqueModalOpen, setIsEstoqueModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,6 +61,13 @@ export const Navbar: React.FC = () => {
             >
               VENDER
             </a>
+            <button
+              type="button"
+              onClick={() => setIsEstoqueModalOpen(true)}
+              className="text-xs lg:text-sm font-bold tracking-wider text-zinc-300 hover:text-white uppercase transition-colors cursor-pointer"
+            >
+              ESTOQUE
+            </button>
             <a
               href="#contato"
               className="text-xs lg:text-sm font-bold tracking-wider text-zinc-300 hover:text-white uppercase transition-colors"
@@ -114,6 +123,16 @@ export const Navbar: React.FC = () => {
             >
               VENDER
             </a>
+            <button
+              type="button"
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setIsEstoqueModalOpen(true);
+              }}
+              className="text-xl font-bold tracking-wider text-white uppercase py-2 border-b border-zinc-800 text-center w-full cursor-pointer hover:text-zinc-300 transition-colors"
+            >
+              ESTOQUE
+            </button>
             <a
               href="#contato"
               onClick={() => setMobileMenuOpen(false)}
@@ -147,6 +166,12 @@ export const Navbar: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Modal de Confirmação para Estoque */}
+      <EstoqueModal
+        isOpen={isEstoqueModalOpen}
+        onClose={() => setIsEstoqueModalOpen(false)}
+      />
     </>
   );
 };

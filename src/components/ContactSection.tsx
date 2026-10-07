@@ -38,6 +38,9 @@ export const ContactSection: React.FC = () => {
               WHATSAPP
             </span>
             <div className="text-lg font-black text-white">{WHATSAPP_DISPLAY}</div>
+            <div className="text-xs font-bold uppercase tracking-wider text-zinc-300 mt-1">
+              GONÇALVES
+            </div>
             <span className="text-xs text-[#25d366] font-semibold mt-2 inline-block">
               Atendimento Online →
             </span>

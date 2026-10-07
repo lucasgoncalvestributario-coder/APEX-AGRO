@@ -37,43 +37,42 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Content strictly centered with generous top clearance for logo */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 text-center flex flex-col items-center pt-32 sm:pt-40 md:pt-48 pb-16">
-        <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.3em] text-zinc-400 mb-4 block">
-          INTERMEDIAÇÃO DE MÁQUINAS E NEGÓCIOS DO AGRO
-        </span>
-
-        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight uppercase leading-[1.05] mb-6 drop-shadow-2xl">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 text-center flex flex-col items-center pt-28 sm:pt-36 md:pt-44 pb-12 sm:pb-16">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight uppercase leading-[1.08] mb-4 sm:mb-5 drop-shadow-2xl">
           MÁQUINAS CERTAS.<br />
           NEGÓCIOS CERTOS.
         </h1>
 
-        <p className="text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
+        <p className="text-sm sm:text-base md:text-lg text-zinc-300 max-w-xl mx-auto mb-6 sm:mb-8 leading-relaxed font-normal px-2">
           Conectamos quem quer vender a quem quer comprar máquinas e oportunidades agrícolas com segurança, agilidade e acompanhamento profissional.
         </p>
 
-        {/* CTA Buttons: QUERO VENDER / QUERO COMPRAR / WHATSAPP */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+        {/* CTAs Compactos e Elegantes: Mobile-first, sem ocupar espaço vertical excessivo */}
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 w-full max-w-xl mx-auto">
+          {/* QUERO VENDER */}
           <button
             onClick={() => openWhatsApp('vender')}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4 rounded-full bg-white hover:bg-zinc-200 text-black font-black text-sm tracking-widest uppercase transition-all transform hover:scale-105 active:scale-95 shadow-2xl cursor-pointer"
+            className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2.5 sm:py-3 rounded-full bg-white hover:bg-zinc-200 text-black font-extrabold text-xs tracking-wider uppercase transition-all transform hover:scale-105 active:scale-95 shadow-md cursor-pointer whitespace-nowrap min-w-[125px]"
           >
             <span>QUERO VENDER</span>
-            <ArrowUpRight className="w-4 h-4" />
+            <ArrowUpRight className="w-3.5 h-3.5" />
           </button>
 
+          {/* QUERO COMPRAR */}
           <button
             onClick={() => openWhatsApp('comprar')}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4 rounded-full bg-zinc-900/80 hover:bg-zinc-800 text-white border border-zinc-700 font-black text-sm tracking-widest uppercase transition-all transform hover:scale-105 active:scale-95 backdrop-blur-md cursor-pointer"
+            className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2.5 sm:py-3 rounded-full bg-zinc-900/90 hover:bg-zinc-800 text-white border border-zinc-700 font-extrabold text-xs tracking-wider uppercase transition-all transform hover:scale-105 active:scale-95 backdrop-blur-md cursor-pointer whitespace-nowrap min-w-[125px]"
           >
             <span>QUERO COMPRAR</span>
-            <ArrowUpRight className="w-4 h-4 text-zinc-400" />
+            <ArrowUpRight className="w-3.5 h-3.5 text-zinc-400" />
           </button>
 
+          {/* FALAR NO WHATSAPP */}
           <button
             onClick={() => openWhatsApp('geral')}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#25d366] hover:bg-[#20ba5a] text-black font-extrabold text-sm tracking-wider uppercase transition-all transform hover:scale-105 active:scale-95 shadow-xl shadow-[#25d366]/20 cursor-pointer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4.5 sm:px-5 py-2.5 sm:py-3 rounded-full bg-[#25d366] hover:bg-[#20ba5a] text-black font-extrabold text-xs tracking-wider uppercase transition-all transform hover:scale-105 active:scale-95 shadow-md shadow-[#25d366]/20 cursor-pointer whitespace-nowrap"
           >
-            <WhatsAppIcon className="w-5 h-5 text-black" />
+            <WhatsAppIcon className="w-4 h-4 text-black" />
             <span>FALAR NO WHATSAPP</span>
           </button>
         </div>

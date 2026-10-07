@@ -14,6 +14,35 @@
   }
 }
 
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee-strip {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes logo-shine {
+  0% {
+    transform: translateX(-140%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(240%) skewX(-20deg);
+  }
+}
+
+.animate-logo-shine {
+  animation: logo-shine 0.9s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
 /* Luxury TCar-style custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

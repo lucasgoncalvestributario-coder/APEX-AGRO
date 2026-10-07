@@ -29,13 +29,18 @@ export const Footer: React.FC = () => {
 
           {/* Direct contacts */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm font-semibold uppercase tracking-wider text-zinc-300">
-            <button
-              onClick={openWhatsApp}
-              className="hover:text-white transition-colors flex items-center gap-2 cursor-pointer"
-            >
-              <WhatsAppIcon className="w-4 h-4 text-[#25d366]" />
-              <span>{WHATSAPP_DISPLAY}</span>
-            </button>
+            <div className="flex flex-col items-center md:items-start">
+              <button
+                onClick={openWhatsApp}
+                className="hover:text-white transition-colors flex items-center gap-2 cursor-pointer"
+              >
+                <WhatsAppIcon className="w-4 h-4 text-[#25d366]" />
+                <span>{WHATSAPP_DISPLAY}</span>
+              </button>
+              <span className="text-[11px] font-bold tracking-wider text-zinc-400 uppercase mt-1">
+                GONÇALVES
+              </span>
+            </div>
 
             <a
               href={`https://instagram.com/${INSTAGRAM_HANDLE.replace('@', '')}`}
