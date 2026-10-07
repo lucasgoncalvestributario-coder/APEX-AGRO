@@ -9,7 +9,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section id="inicio" className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-black select-none">
+    <section id="inicio" className="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden bg-black select-none">
       {/* Background Image solicitada pelo usuário em altíssima qualidade (4K Ultra-HD / Retinal) */}
       <div className="absolute inset-0 w-full h-full">
         <picture>
